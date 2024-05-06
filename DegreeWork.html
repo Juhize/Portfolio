@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Degree work</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Main page</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Who am I</a></li>
+							<li class="active"><a href="DegreeWork.html">Degree work</a></li>
+							<li><a href="CertsAndCourses.html">Certs and courses</a></li>
+							<li><a href="Programs.html">Programs I have used</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/juhani-hamalainen/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:juhize21@gmail.com" class="fa fa-envelope , icon"></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">May 1, 2024</span>
+									<h2>Degree Work</h2>
+
+								</header>
+								<p><span class="image right"><img src="images/HKI1.png" alt="" /></span><p>The assignment tasked me with planning, building, testing, and documenting an IT infrastructure for a fictional company. I created a marketing company with 11 employees operating from two offices. For servers, I utilized one Windows Server 2016 with a graphical user interface (GUI) and another without GUI. Workstations were equipped with Windows 10 Enterprise, which I configured using VMware virtualization. To streamline workstation installation, I developed a custom image and employed WDS (PXE-boot) for deployment.</p>
+								<p> This project served as a substitute for my final internship. The Original document has 144 pages, and it also includes more stuff about cybersecurity. In original document I also explain some key concepts about networking and cybersecurity in my own words. During this work I had some network related issues that turned to be some glitch on VMWare. I tried about every trick in the book (and internet) before reinstalling VMWare. Got 5/5 grade from this work, mainly because I handled so many issues during this work and had to learn new.</p>
+
+							<h3>Servers used in this work</h3>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<ul>
+										<li>ADDS</li>
+										<li>DNS</li>
+										<li>DHCP</li>
+										<li>Backup</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul>
+										<li>Deployment server</li>
+										<li>Windows Update server</li>
+										<li>Print</li>
+										<li>File Server Resource Manager</li>
+									</ul>
+								</div>
+							<h3>Active Directory</h3>
+							<p><span class="image left"><img src="images/Group.png" alt="" /></span>I made templates to make users and used ACL-groups and groups for managing user rights and access. I also delegated some admin rights for ICT and made two global admin users. I've heard that computers are usually in different place on AD, but I found that this way is simpler for managing group policies.</p>
+							<span class="image fit"><img src="images/AD.png"></span>
+							<h3>Group policies</h3>							
+							<p><span class="image right">
+									<img src="images/GP.png"></span>I utilized group policies to implement drive mappings and restrict certain user rights. Additionally, I configured policies to prevent users from viewing the last logged-in user on the login screen, along with making auditing policy changes on the Default policy. Initially, I attempted to configure the core server firewall and services through GPO, but encountered limitations as these settings need to be established before the server can accept such commands.</p>
+							
+							<h3>Windows "core" server</h3>
+							<p><span class="image right"><img src="images/sconfig.png" alt="" /></span>
+								I initially expected this task to be straightforward since I could manage the server through management tools. However, I had to learn about configuring firewall settings and services using Power Shell first. On this server I used Diskpart for partitioning disks and smb-share on folders (which came obsolete when I managed to get server managing tools working). I also did some management using sconfig.</p>
+								
+						<footer>
+						<div>
+						<a href="#" class="fa fa-arrow-up" ><span class="label">UP</span></a></span></li>
+						</div>
+						</footer>
+	
+						</section>
+
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
